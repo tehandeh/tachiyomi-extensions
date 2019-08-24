@@ -44,7 +44,8 @@ class MadaraFactory : SourceFactory {
         ManyToon(),
         ChibiManga(),
         ToomicsMe(),
-        ZinManga()
+        ZinManga(),
+        TeabeerComcs()
     )
 }
 
@@ -166,5 +167,8 @@ class ToomicsMe : Madara("Toomics.me", "https://toomics.me/", "en") {
     override fun searchMangaNextPageSelector() = "nav.navigation-ajax"
 }
 class ZinManga : Madara("Zin Translator", "https://zinmanga.com/", "en") {
+    override fun searchMangaNextPageSelector() = "nav.navigation-ajax"
+}
+class TeabeerComics : Madara("Teabeer Comics", "https://teabeercomics.com/", "en") {
     override fun searchMangaNextPageSelector() = "nav.navigation-ajax"
 }
